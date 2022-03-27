@@ -1,3 +1,6 @@
+#### 本项目是使用create-vue包的3.1.8版本创建的
+![图片加载中...](./create-vue.png)
+
 # npm-publish-vue3-component
 
 This template should help get you started developing with Vue 3 in Vite.

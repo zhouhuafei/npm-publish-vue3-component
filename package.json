@@ -1,6 +1,10 @@
 {
   "name": "npm-publish-vue3-component",
   "version": "0.0.0",
+  "engines": {
+    "node": "14.19.1",
+    "npm": "6.14.16"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
