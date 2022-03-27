@@ -15,6 +15,11 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <TheWelcome />
   </main>
+
+  <div style="padding: 10px 0;">
+    <V3Button1 msg="hello" style="margin-bottom: 10px;" />
+    <V3Button2 msg="world" />
+  </div>
 </template>
 
 <style>
