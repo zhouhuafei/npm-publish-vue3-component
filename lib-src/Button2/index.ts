@@ -5,4 +5,4 @@ Component.install = function (instance: App) {
   instance.component(Component.name, Component)
 }
 
-export default Component
+export default Component as any
