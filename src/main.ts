@@ -6,6 +6,6 @@ import {
 } from '../lib-src'
 
 const instance = createApp(App)
-instance.use(V3Button1 as any)
-instance.use(V3Button2 as any)
+instance.use(V3Button1)
+instance.use(V3Button2)
 instance.mount('#app')
