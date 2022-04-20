@@ -1,8 +1,4 @@
-import type { App } from 'vue'
 import Component from './Component.vue'
+import { withInstall } from '../utils/ComponentUtil'
 
-Component.install = function (instance: App) {
-  instance.component(Component.name, Component)
-}
-
-export default Component as any
+export default withInstall(Component)
