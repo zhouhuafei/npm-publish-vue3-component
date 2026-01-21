@@ -1,3 +1,14 @@
+# Project specific directories and files
+lib
+
+# 非模板内置
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
+src/auto-imports.d.ts
+src/components.d.ts
+.hbuilderx
+
 # Logs
 logs/*
 !logs/.gitkeep
@@ -8,27 +19,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-yarn.lock
-pnpm-lock.yaml
-package-lock.json
-src/auto-imports.d.ts
-src/components.d.ts
 node_modules
 .DS_Store
-lib
 dist
 dist-ssr
 coverage
 *.local
 
-/cypress/videos/
-/cypress/screenshots/
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.hbuilderx
 *.suo
 *.ntvs*
 *.njsproj
@@ -36,3 +37,12 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+.eslintcache
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Vitest
+__screenshots__/
