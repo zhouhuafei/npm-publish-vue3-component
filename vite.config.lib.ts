@@ -10,6 +10,8 @@ export default defineConfig({
   build: {
     minify: false,
     outDir: './lib',
+    emptyOutDir: true,
+    copyPublicDir: false,
     lib: {
       entry: path.resolve(__dirname, './lib-src/index.ts'),
       name: 'V3Button',
