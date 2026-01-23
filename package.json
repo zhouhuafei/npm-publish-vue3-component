@@ -19,6 +19,7 @@
   },
   "scripts": {
     "i": "npm i --legacy-peer-deps",
+    "build:lib": "vite build -c ./vite.config.lib.ts",
     "devBak": "vite",
     "dev": "vite --host",
     "buildBak": "run-p type-check \"build-only {@}\" --",
@@ -28,8 +29,7 @@
     "test:unit": "vitest",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix --cache",
-    "build:lib": "vite build -c ./vite.config.lib.ts"
+    "lint": "eslint . --fix --cache"
   },
   "repository": {
     "type": "git",
