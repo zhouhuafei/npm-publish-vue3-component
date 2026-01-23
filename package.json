@@ -19,15 +19,17 @@
   },
   "scripts": {
     "i": "npm i --legacy-peer-deps",
+    "devBak": "vite",
     "dev": "vite --host",
-    "build": "run-p \"build-only {@}\" --",
-    "buildAndTypeCheck": "run-p type-check \"build-only {@}\" --",
-    "build:lib": "vite build -c ./vite.config.lib.ts",
+    "buildBak": "run-p type-check \"build-only {@}\" --",
+    "build": "vite build",
+    "previewBak": "vite preview",
     "preview": "vite preview --port 5552",
     "test:unit": "vitest",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix --cache"
+    "lint": "eslint . --fix --cache",
+    "build:lib": "vite build -c ./vite.config.lib.ts"
   },
   "repository": {
     "type": "git",
