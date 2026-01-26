@@ -6,7 +6,7 @@ import App from './App.vue'
 import '../lib/index.css'
 import { V3Button1, V3Button2 } from '../lib/index.es.js'
 
-const instance = createApp(App)
-instance.use(V3Button1)
-instance.use(V3Button2)
-instance.mount('#app')
+const app = createApp(App)
+app.use(V3Button1)
+app.use(V3Button2)
+app.mount('#app')
