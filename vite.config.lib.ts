@@ -37,10 +37,7 @@ export default defineConfig({
     dts({
       entryRoot: './lib-src',
       outDir: './lib',
-      compilerOptions: {
-        declaration: true,
-        emitDeclarationOnly: true
-      }
+      tsconfigPath: './tsconfig.lib.json'
     })
   ],
   resolve: {
