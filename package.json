@@ -6,9 +6,9 @@
   "module": "./lib/index.es.js",
   "exports": {
     ".": {
+      "types": "./lib/index.d.ts",
       "require": "./lib/index.umd.js",
-      "import": "./lib/index.es.js",
-      "types": "./lib/index.d.ts"
+      "import": "./lib/index.es.js"
     },
     "./lib/*": "./lib/*"
   },
