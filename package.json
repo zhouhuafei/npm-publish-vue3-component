@@ -8,7 +8,8 @@
     ".": {
       "require": "./lib/index.umd.js",
       "import": "./lib/index.es.js"
-    }
+    },
+    "./lib/*": "./lib/*"
   },
   "files": [
     "lib"

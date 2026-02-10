@@ -6,6 +6,10 @@
 * 目前的升级已追平到`create-vue`的`3.18.5`版本。
 
 # npm-publish-vue3-component
+```
+import 'npm-publish-vue3-component/lib/index.css'
+import { V3Button1, V3Button2 } from 'npm-publish-vue3-component'
+```
 
 This template should help get you started developing with Vue 3 in Vite.
 
