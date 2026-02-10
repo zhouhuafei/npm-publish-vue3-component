@@ -1,0 +1,16 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "lib-src/**/*", "lib-src/**/*.vue", "lib-src/**/*.tsx"],
+  "exclude": ["lib-src/**/__tests__/*"],
+  "compilerOptions": {
+    "strict": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./lib",
+    "rootDir": "./lib-src",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.lib.tsbuildinfo",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

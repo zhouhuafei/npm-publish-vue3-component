@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from 'url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
+import dts from 'vite-plugin-dts'
 import path from 'path'
 
 // https://vitejs.dev/config/
@@ -17,6 +18,7 @@ export default defineConfig({
       name: 'V3Button',
       fileName: (format) => `index.${format}.js`
     },
+    cssCodeSplit: false,
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['vue'],
@@ -26,13 +28,27 @@ export default defineConfig({
           vue: 'Vue'
         },
         // 控制静态资源（包括CSS）的输出文件名
-        assetFileNames: 'index.css'
+        // assetFileNames: 'index.css'
+        // 强制将样式内联到JavaScript文件中
+        inlineDynamicImports: true
       }
     }
   },
+  css: {
+    // 强制将所有样式内联到JS中
+    devSourcemap: false
+  },
   plugins: [
     vue(),
-    vueJsx()
+    vueJsx(),
+    dts({
+      entryRoot: './lib-src',
+      outDir: './lib',
+      compilerOptions: {
+        declaration: true,
+        emitDeclarationOnly: true
+      }
+    })
   ],
   resolve: {
     alias: {

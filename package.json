@@ -7,10 +7,12 @@
   "exports": {
     ".": {
       "require": "./lib/index.umd.js",
-      "import": "./lib/index.es.js"
+      "import": "./lib/index.es.js",
+      "types": "./lib/index.d.ts"
     },
     "./lib/*": "./lib/*"
   },
+  "types": "./lib/index.d.ts",
   "files": [
     "lib"
   ],
@@ -64,6 +66,7 @@
     "sass": "^1.49.9",
     "typescript": "~5.9.3",
     "vite": "^7.3.0",
+    "vite-plugin-dts": "^4.5.4",
     "vite-plugin-vue-devtools": "^8.0.5",
     "vitest": "^4.0.16",
     "vue-tsc": "^3.2.2"
