@@ -13,6 +13,7 @@ export default defineComponent({
         <div class={css.v3Button2}>
           {props.msg}
         </div>
+        <el-button type="primary" style="margin-top: 10px;">element-plus el-button</el-button>
       </>
     }
   }
