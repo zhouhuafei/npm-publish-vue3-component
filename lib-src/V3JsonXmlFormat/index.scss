@@ -11,14 +11,33 @@
   overflow: auto;
   outline: none;
   box-sizing: border-box;
-  box-shadow: 0 0 0 1px var(--el-input-border-color, var(--el-border-color)) inset;
+  border: 1px solid var(--el-input-border-color, var(--el-border-color));
   padding: 5px 11px;
   border-radius: var(--el-input-border-radius, var(--el-border-radius-base));
-  transition: var(--el-transition-box-shadow);
+  transition: var(--el-transition-border);
   --el-input-focus-border-color: var(--el-color-primary);
 
   &:focus {
-    box-shadow: 0 0 0 1px var(--el-input-focus-border-color) inset;
+    border-color: var(--el-input-focus-border-color);
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    cursor: default;
+    border-radius: 100px;
+    background: var(--el-border-color);
+  }
+
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: none;
   }
 }
 

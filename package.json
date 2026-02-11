@@ -54,7 +54,9 @@
   "homepage": "https://github.com/zhouhuafei/npm-publish-vue3-component#readme",
   "dependencies": {
     "element-plus": "^2.13.2",
-    "vue": "^3.5.26"
+    "highlight.js": "^11.11.1",
+    "vue": "^3.5.26",
+    "xml-formatter": "^3.6.7"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.3",
