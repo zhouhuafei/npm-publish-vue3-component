@@ -1,5 +1,5 @@
 <template>
-  <div class="v3Button1">{{ props.msg }}</div>
+  <div class="V3Button1">{{ props.msg }}</div>
 </template>
 
 <script lang="ts" setup>
