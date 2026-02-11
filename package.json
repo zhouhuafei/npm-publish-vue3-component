@@ -23,6 +23,7 @@
   "scripts": {
     "i": "npm i --legacy-peer-deps",
     "build:lib": "vite build -c ./vite.config.lib.ts",
+    "prepublishOnly": "npm run i && npm run build:lib",
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview --port 5552",

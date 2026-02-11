@@ -1,5 +1,10 @@
 .HelloWorld2 {
-  width: 200px;
-  height: 60px;
-  border: 1px solid green;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid red;
 }

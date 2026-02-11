@@ -9,11 +9,7 @@ export default defineComponent({
   },
   setup (props) {
     return () => {
-      return <>
-        <div class={`HelloWorld2 ${css.HelloWorld2}`}>
-          {props.msg}
-        </div>
-      </>
+      return <div class={`HelloWorld2 ${css.HelloWorld2}`}>{props.msg}</div>
     }
   }
 })

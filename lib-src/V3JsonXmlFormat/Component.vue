@@ -5,12 +5,18 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'V3JsonXmlFormat'
-})
+<script lang="ts" setup>
+// ********************************* import
+import { defineOptions, defineProps } from 'vue'
+// ********************************* defineOptions
+defineOptions({ name: 'V3JsonXmlFormat' })
+// ********************************* const and let
+// ********************************* props and emits
+// ********************************* thisFields and thisMethods and lifetimes
+// ********************************* otherFields and otherMethods
+// ********************************* computedFields and watch
+// ********************************* defineExpose
+// ********************************* defineOptions
 </script>
 
 <style scoped lang="scss">
