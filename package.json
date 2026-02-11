@@ -1,6 +1,6 @@
 {
   "name": "npm-publish-vue3-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "npm-publish-vue3-component",
   "main": "./lib/index.umd.js",
   "module": "./lib/index.es.js",
