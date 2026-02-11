@@ -1,7 +1,9 @@
 <template>
   <div id="main">
-    <V3Button1 msg="V3Button1" style="margin-bottom: 5px;" />
-    <V3Button2 msg="V3Button2" />
+    <div style="margin-bottom: 5px;display: flex;align-items: center;">
+      <V3Button1 msg="V3Button1" style="margin-right: 5px;" />
+      <V3Button2 msg="V3Button2" />
+    </div>
     <div style="width: 300px;height: 200px;margin-top: 5px;">
       <V3JsonXmlFormat />
     </div>
