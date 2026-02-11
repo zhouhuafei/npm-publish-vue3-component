@@ -5,7 +5,7 @@ import Component from '../index.tsx'
 
 describe('HelloWorld2', () => {
   it('renders properly', () => {
-    const wrapper = mount(Component, { props: { msg: 'hello' } })
-    expect(wrapper.text()).toContain('hello')
+    const wrapper = mount(Component, { props: { msg: 'HelloWorld2' } })
+    expect(wrapper.text()).toContain('HelloWorld2')
   })
 })
