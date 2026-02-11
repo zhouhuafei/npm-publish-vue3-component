@@ -10,7 +10,7 @@ export default defineComponent({
   setup (props) {
     return () => {
       return <>
-        <div class={css.HelloWorld2}>
+        <div class={`HelloWorld2 ${css.HelloWorld2}`}>
           {props.msg}
         </div>
       </>

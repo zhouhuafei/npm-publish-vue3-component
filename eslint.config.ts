@@ -14,13 +14,22 @@ export default defineConfigWithVueTs(
 
   {
     name: 'app/files-to-lint',
-    files: ['**/*.{vue,ts,mts,tsx}'],
+    rules: {
+      'prefer-const': 'off',
+      'vue/no-unused-vars': 'off',
+      'vue/no-mutating-props': 'off',
+      'vue/multi-word-component-names': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-unused-expressions': 'off'
+    },
+    files: ['**/*.{vue,ts,mts,tsx}']
   },
 
   globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
 
   {
     ...pluginVitest.configs.recommended,
-    files: ['src/**/__tests__/*'],
-  },
+    files: ['src/**/__tests__/*']
+  }
 )
