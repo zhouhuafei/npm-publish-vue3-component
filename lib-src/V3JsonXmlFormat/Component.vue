@@ -15,7 +15,6 @@ defineOptions({ name: 'V3JsonXmlFormat' })
 // ********************************* otherFields and otherMethods
 // ********************************* computedFields and watch
 // ********************************* defineExpose
-// ********************************* defineOptions
 </script>
 
 <style scoped lang="scss">

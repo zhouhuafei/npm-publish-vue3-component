@@ -18,7 +18,6 @@ const props = defineProps({
 // ********************************* otherFields and otherMethods
 // ********************************* computedFields and watch
 // ********************************* defineExpose
-// ********************************* defineOptions
 </script>
 
 <style lang="scss" scoped>
