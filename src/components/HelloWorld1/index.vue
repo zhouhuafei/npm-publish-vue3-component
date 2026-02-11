@@ -29,6 +29,7 @@ const props = defineProps({
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  cursor: pointer;
   border: 1px solid black;
 }
 </style>
