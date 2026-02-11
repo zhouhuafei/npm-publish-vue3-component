@@ -8,7 +8,7 @@
 # npm-publish-vue3-component
 ```
 import 'npm-publish-vue3-component/lib/index.css'
-import { V3Button1, V3Button2 } from 'npm-publish-vue3-component'
+import { V3Button1, V3Button2, V3JsonXmlFormat } from 'npm-publish-vue3-component'
 ```
 
 This template should help get you started developing with Vue 3 in Vite.
