@@ -7,7 +7,6 @@
 
 <script lang="ts" setup>
 // ********************************* import
-import { defineOptions, defineProps } from 'vue'
 // ********************************* defineOptions
 defineOptions({ name: 'V3JsonXmlFormat' })
 // ********************************* const and let

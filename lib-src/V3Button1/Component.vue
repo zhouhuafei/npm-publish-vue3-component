@@ -4,7 +4,6 @@
 
 <script lang="ts" setup>
 // ********************************* import
-import { defineOptions, defineProps } from 'vue'
 // ********************************* defineOptions
 defineOptions({ name: 'V3Button1' })
 // ********************************* const and let
