@@ -9,11 +9,9 @@ export default defineComponent({
   },
   setup (props) {
     return () => {
-      return <>
-        <div class={`v3Button2 ${css.v3Button2}`}>
-          {props.msg}
-        </div>
-      </>
+      return <div class={`v3Button2 ${css.v3Button2}`}>
+        {props.msg}
+      </div>
     }
   }
 })
