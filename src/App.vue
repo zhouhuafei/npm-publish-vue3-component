@@ -27,7 +27,7 @@
 import { reactive } from 'vue'
 
 const V3PaginationSelectFields = reactive({
-  value: ''
+  value: { label: '选项4', value: '4' }
 })
 const V3PaginationSelectMethods = {
   async getList ({ name, pageNo, pageSize }: { name: '', pageNo: number, pageSize: number }) {

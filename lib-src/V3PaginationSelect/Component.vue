@@ -3,6 +3,7 @@
     clearable
     filterable
     placeholder="请选择"
+    popper-class="V3PaginationSelectPopperWrap"
   >
     <div class="V3PaginationSelectSearchWrap">
       <el-input
