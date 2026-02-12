@@ -144,11 +144,7 @@ onMounted(() => {
     }
 
     &.is-empty .el-select-dropdown__list {
-      padding-top: 6px;
-
-      .V3PaginationSelectSearchWrap {
-        padding-bottom: 0;
-      }
+      padding: 6px 0;
     }
   }
 }
