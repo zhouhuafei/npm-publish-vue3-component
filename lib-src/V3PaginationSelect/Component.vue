@@ -92,3 +92,15 @@ onMounted(() => {
 <style scoped lang="scss">
 @use "./index" as *;
 </style>
+
+<style lang="scss">
+.V3PaginationSelectPopperWrap {
+  .el-scrollbar.is-empty .el-select-dropdown__list {
+    padding-top: 6px;
+
+    .V3PaginationSelectSearchWrap {
+      padding-bottom: 0;
+    }
+  }
+}
+</style>
