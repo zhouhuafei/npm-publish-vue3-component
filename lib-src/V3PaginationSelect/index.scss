@@ -3,6 +3,10 @@
   align-items: center;
   padding: 0 6px 6px;
 
+  &.isEmpty {
+    padding-bottom: 0;
+  }
+
   .V3PaginationSelectSearchButton {
     cursor: pointer;
     user-select: none;

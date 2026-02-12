@@ -5,6 +5,21 @@
     placeholder="请选择"
     popper-class="V3PaginationSelectPopperWrap"
   >
+    <template #empty>
+      <div class="V3PaginationSelectSearchWrap isEmpty">
+        <el-input
+          placeholder="请输入"
+          clearable
+          v-model="thisFields.name"
+          size="small"
+          @keydown.enter="thisMethods.search"
+        >
+          <template #append>
+            <div class="V3PaginationSelectSearchButton" @click="thisMethods.search">搜索</div>
+          </template>
+        </el-input>
+      </div>
+    </template>
     <div class="V3PaginationSelectSearchWrap">
       <el-input
         placeholder="请输入"
