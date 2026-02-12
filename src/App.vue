@@ -1,6 +1,11 @@
 <template>
   <div id="main">
     <div style="margin-bottom: 5px;display: flex;align-items: center;">
+      <IconCommunity />
+      <IconDocumentation />
+      <IconEcosystem />
+      <IconSupport />
+      <IconTooling />
       <HelloWorld1 msg="HelloWorld1" />
       <HelloWorld2 msg="HelloWorld2" style="margin-left: 5px;" />
       <V3Button1 msg="V3Button1" style="margin-left: 5px;" />
