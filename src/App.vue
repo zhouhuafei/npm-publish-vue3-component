@@ -31,7 +31,8 @@ const V3PaginationSelectFields = reactive({
   value: ''
 })
 const V3PaginationSelectMethods = {
-  async getList ({ pageNo, pageSize }: { pageNo: number, pageSize: number }) {
+  async getList ({ name, pageNo, pageSize }: { name: '', pageNo: number, pageSize: number }) {
+    console.log('getList name：', name)
     console.log('getList pageNo：', pageNo)
     console.log('getList pageSize：', pageSize)
     return {
