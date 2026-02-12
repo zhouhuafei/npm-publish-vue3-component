@@ -39,16 +39,11 @@
 
 <script lang="ts" setup>
 // ********************************* import
-import { onMounted, reactive, useAttrs } from 'vue'
+import { onMounted, reactive } from 'vue'
 // ********************************* defineOptions
 // ********************************* const and let
-// const attrs = useAttrs()
 // ********************************* props and emits
 const props = defineProps({
-  paginationAttrs: {
-    type: Object,
-    default: () => ({})
-  },
   getList: {
     type: Function,
     required: true

@@ -13,7 +13,6 @@
       <V3PaginationSelect
         style="margin-left: 5px; width: 205px;"
         v-model="V3PaginationSelectFields.value"
-        :paginationAttrs="{}"
         :getList="V3PaginationSelectMethods.getList"
       />
       <div style="margin-left: 5px;">{{ V3PaginationSelectFields.value }}</div>
