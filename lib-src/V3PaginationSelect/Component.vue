@@ -3,7 +3,7 @@
     clearable
     filterable
     placeholder="请选择"
-    popper-class="V3PaginationSelectPopperWrap"
+    :popper-class="`V3PaginationSelectPopperWrap ${thisFields.list.length?'notEmpty':'isEmpty'}`"
     collapse-tags
     collapse-tags-tooltip
   >
@@ -145,6 +145,12 @@ onMounted(() => {
 
     &.is-empty .el-select-dropdown__list {
       padding: 6px 0;
+    }
+  }
+
+  &.notEmpty {
+    .el-select-dropdown__empty {
+      display: none;
     }
   }
 }
