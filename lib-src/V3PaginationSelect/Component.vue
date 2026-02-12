@@ -4,6 +4,8 @@
     filterable
     placeholder="请选择"
     popper-class="V3PaginationSelectPopperWrap"
+    collapse-tags
+    collapse-tags-tooltip
   >
     <template v-if="thisFields.list.length">
       <div class="V3PaginationSelectSearchWrap">
@@ -89,20 +91,25 @@ const thisMethods = {
     })
     thisFields.list = resData.list
     thisFields.total = resData.total
-    if (attrs.modelValue) {
-      if (attrs.multiple) {
-        if (attrs.modelValue.length) {
-          // TODO...1 - 目前只考虑了单选的情况，后续需要考虑多选的情况
-        }
-      } else {
-        if (attrs.modelValue.value) {
-          const findValue = thisFields.list.find((item: { value: string }) => item.value === attrs.modelValue.value)
-          if (!findValue) {
-            thisFields.list.push(attrs.modelValue)
-          }
-        }
-      }
-    }
+    // if (attrs.modelValue) {
+    //   if (attrs.multiple !== undefined) {
+    //     if (attrs.modelValue.length) {
+    //       attrs.modelValue.forEach((item: any) => {
+    //         const findValue = thisFields.list.find((listItem: any) => listItem.value === item.value)
+    //         if (!findValue) {
+    //           thisFields.list.push(item)
+    //         }
+    //       })
+    //     }
+    //   } else {
+    //     if (Object.keys(attrs.modelValue).length) {
+    //       const findValue = thisFields.list.find((item: any) => item.value === attrs.modelValue.value)
+    //       if (!findValue) {
+    //         thisFields.list.push(attrs.modelValue)
+    //       }
+    //     }
+    //   }
+    // }
   },
   pageChange (e: number) {
     thisFields.pageNo = e
