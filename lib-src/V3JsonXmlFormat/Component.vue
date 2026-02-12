@@ -1,7 +1,7 @@
 <template>
   <div class="V3JsonXmlFormatWrap">
     <pre ref="V3JsonXmlFormatRef" class="V3JsonXmlFormat" contenteditable></pre>
-    <el-button type="primary" class="V3JsonXmlFormatButton" @click="format">格式化</el-button>
+    <el-button size="small" type="primary" class="V3JsonXmlFormatButton" @click="format">格式化</el-button>
   </div>
 </template>
 
