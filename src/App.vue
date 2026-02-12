@@ -1,24 +1,24 @@
 <template>
   <div id="main">
     <div style="margin-bottom: 5px;display: flex;align-items: center;">
-      <IconCommunity />
-      <IconDocumentation />
-      <IconEcosystem />
-      <IconSupport />
-      <IconTooling />
       <HelloWorld1 msg="HelloWorld1" />
       <HelloWorld2 msg="HelloWorld2" style="margin-left: 5px;" />
+      <IconCommunity style="margin-left: 5px;" />
+      <IconDocumentation style="margin-left: 5px;" />
+      <IconEcosystem style="margin-left: 5px;" />
+      <IconSupport style="margin-left: 5px;" />
+      <IconTooling style="margin-left: 5px;" />
       <V3Button1 msg="V3Button1" style="margin-left: 5px;" />
       <V3Button2 msg="V3Button2" style="margin-left: 5px;" />
       <V3PaginationSelect
-        style="margin-left: 5px; width: 100px;"
+        style="margin-left: 5px; width: 205px;"
         v-model="V3PaginationSelectFields.value"
         :paginationAttrs="{}"
         :getList="V3PaginationSelectMethods.getList"
       />
-      {{ V3PaginationSelectFields.value }}
+      <div style="margin-left: 5px;">{{ V3PaginationSelectFields.value }}</div>
     </div>
-    <div style="width: 415px;height: 415px;">
+    <div style="width: 542px;height: 76px;">
       <V3JsonXmlFormat />
     </div>
   </div>

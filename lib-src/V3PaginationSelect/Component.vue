@@ -1,5 +1,5 @@
 <template>
-  <el-select clearable filterable>
+  <el-select clearable filterable class="V3PaginationSelect">
     <el-option
       v-for="option in thisFields.list"
       :key="option.value"
