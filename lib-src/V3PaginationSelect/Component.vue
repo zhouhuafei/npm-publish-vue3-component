@@ -5,7 +5,39 @@
     placeholder="请选择"
     popper-class="V3PaginationSelectPopperWrap"
   >
-    <template #empty>
+    <template v-if="thisFields.list.length">
+      <div class="V3PaginationSelectSearchWrap">
+        <el-input
+          placeholder="请输入"
+          clearable
+          v-model="thisFields.name"
+          size="small"
+          @keydown.enter="thisMethods.search"
+        >
+          <template #append>
+            <div class="V3PaginationSelectSearchButton" @click="thisMethods.search">搜索</div>
+          </template>
+        </el-input>
+      </div>
+      <el-option
+        v-for="option in thisFields.list"
+        :key="option.value"
+        :label="option.label"
+        :value="option"
+      />
+      <div class="V3PaginationSelectPaginationWrap">
+        <el-pagination
+          size="small"
+          :total="thisFields.total"
+          :current-page="thisFields.pageNo"
+          :page-size="thisFields.pageSize"
+          @size-change="thisMethods.sizeChange"
+          @current-change="thisMethods.pageChange"
+          layout="total, sizes, prev, pager, next, jumper"
+        />
+      </div>
+    </template>
+    <template v-if="!thisFields.list.length" #empty>
       <div class="V3PaginationSelectSearchWrap isEmpty">
         <el-input
           placeholder="请输入"
@@ -20,36 +52,6 @@
         </el-input>
       </div>
     </template>
-    <div class="V3PaginationSelectSearchWrap">
-      <el-input
-        placeholder="请输入"
-        clearable
-        v-model="thisFields.name"
-        size="small"
-        @keydown.enter="thisMethods.search"
-      >
-        <template #append>
-          <div class="V3PaginationSelectSearchButton" @click="thisMethods.search">搜索</div>
-        </template>
-      </el-input>
-    </div>
-    <el-option
-      v-for="option in thisFields.list"
-      :key="option.value"
-      :label="option.label"
-      :value="option"
-    />
-    <div class="V3PaginationSelectPaginationWrap">
-      <el-pagination
-        size="small"
-        :total="thisFields.total"
-        :current-page="thisFields.pageNo"
-        :page-size="thisFields.pageSize"
-        @size-change="thisMethods.sizeChange"
-        @current-change="thisMethods.pageChange"
-        layout="total, sizes, prev, pager, next, jumper"
-      />
-    </div>
   </el-select>
 </template>
 
