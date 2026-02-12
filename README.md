@@ -7,8 +7,15 @@
 
 # npm-publish-vue3-component
 ```
+# 导入组件 - 在main.ts中
 import 'npm-publish-vue3-component/lib/index.css'
-import { V3Button1, V3Button2, V3JsonXmlFormat } from 'npm-publish-vue3-component'
+import * as V3Components from 'npm-publish-vue3-component'
+
+# 注册组件 - 在main.ts中
+for (const [key, component] of Object.entries(V3Components)) app.component(key, component)
+
+# 使用组件 - 在.vue文件中
+# 使用细节参考github源码 ./src/App.vue 中的示例
 ```
 
 This template should help get you started developing with Vue 3 in Vite.
