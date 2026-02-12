@@ -10,7 +10,7 @@
     <template v-if="thisFields.list.length">
       <div class="V3PaginationSelectSearchWrap">
         <el-input
-          placeholder="请输入"
+          placeholder="可在此处输入关键字进行远程数据搜索"
           clearable
           v-model="thisFields.name"
           size="small"
@@ -42,7 +42,7 @@
     <template v-if="!thisFields.list.length" #empty>
       <div class="V3PaginationSelectSearchWrap isEmpty">
         <el-input
-          placeholder="请输入"
+          placeholder="可在此处输入关键字进行远程数据搜索"
           clearable
           v-model="thisFields.name"
           size="small"
