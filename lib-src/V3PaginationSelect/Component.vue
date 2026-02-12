@@ -21,12 +21,14 @@
           </template>
         </el-input>
       </div>
-      <el-option
-        v-for="option in thisFields.list"
-        :key="option.value"
-        :label="option.label"
-        :value="option"
-      />
+      <div class="V3PaginationSelectOptionsWrap">
+        <el-option
+          v-for="option in thisFields.list"
+          :key="option.value"
+          :label="option.label"
+          :value="option"
+        />
+      </div>
       <div class="V3PaginationSelectPaginationWrap">
         <el-pagination
           size="small"
@@ -134,11 +136,19 @@ onMounted(() => {
 
 <style lang="scss">
 .V3PaginationSelectPopperWrap {
-  .el-scrollbar.is-empty .el-select-dropdown__list {
-    padding-top: 6px;
+  .el-scrollbar {
+    .el-select-dropdown__wrap {
+      $w: 412;
+      height: $w + px;
+      max-height: $w + px;
+    }
 
-    .V3PaginationSelectSearchWrap {
-      padding-bottom: 0;
+    &.is-empty .el-select-dropdown__list {
+      padding-top: 6px;
+
+      .V3PaginationSelectSearchWrap {
+        padding-bottom: 0;
+      }
     }
   }
 }

@@ -27,20 +27,20 @@
 import { reactive } from 'vue'
 
 const V3PaginationSelectFields = reactive({
-  value: { label: '选项4', value: '4' }
+  value: { label: '选项99', value: '99' }
 })
 const V3PaginationSelectMethods = {
   async getList ({ name, pageNo, pageSize }: { name: '', pageNo: number, pageSize: number }) {
     console.log('getList name：', name)
     console.log('getList pageNo：', pageNo)
     console.log('getList pageSize：', pageSize)
+    const total = 88
     return {
-      list: [
-        { label: '选项1', value: '1' },
-        { label: '选项2', value: '2' },
-        { label: '选项3', value: '3' }
-      ],
-      total: 3
+      list: [...Array(total)].map((_, i) => ({
+        label: `选项${i + 1}`,
+        value: `${i + 1}`
+      })),
+      total
     }
   }
 }
