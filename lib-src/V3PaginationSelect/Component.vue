@@ -57,9 +57,10 @@
 
 <script lang="ts" setup>
 // ********************************* import
-import { onMounted, reactive } from 'vue'
+import { onMounted, reactive, useAttrs } from 'vue'
 // ********************************* defineOptions
 // ********************************* const and let
+const attrs: any = useAttrs()
 // ********************************* props and emits
 const props = defineProps({
   getList: {
@@ -88,6 +89,20 @@ const thisMethods = {
     })
     thisFields.list = resData.list
     thisFields.total = resData.total
+    if (attrs.modelValue) {
+      if (attrs.multiple) {
+        if (attrs.modelValue.length) {
+          // TODO...1 - 目前只考虑了单选的情况，后续需要考虑多选的情况
+        }
+      } else {
+        if (attrs.modelValue.value) {
+          const findValue = thisFields.list.find((item: { value: string }) => item.value === attrs.modelValue.value)
+          if (!findValue) {
+            thisFields.list.push(attrs.modelValue)
+          }
+        }
+      }
+    }
   },
   pageChange (e: number) {
     thisFields.pageNo = e
